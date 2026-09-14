@@ -85,6 +85,7 @@ img {
 
 .brand img {
   width: 190px;
+  filter: brightness(0.45) saturate(1.15);
 }
 
 .nav {
@@ -745,6 +746,7 @@ img {
 .footer-logo {
   width: 195px;
   margin-bottom: 20px;
+  filter: brightness(0) invert(1);
 }
 
 .footer p,
@@ -775,6 +777,13 @@ img {
   border-top: 1px solid rgba(255, 255, 255, 0.12);
   color: #888286;
   font-size: 0.72rem;
+}
+
+.footer a:hover {
+  color: var(--rose-dark);
+}
+.footer a:hover::after {
+  width: 100%;
 }
 
 /* REVEAL */
@@ -936,4 +945,21 @@ img {
     opacity: 1;
     transform: none;
   }
+}
+
+.desenvolvido-por {
+  margin-top: 10px;
+  font-size: 0.8rem;
+  color: #888286;
+}
+
+.desenvolvido-por a {
+  color: #d9aebe;
+  font-weight: 700;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.desenvolvido-por a:hover {
+  color: #ffffff;
 }
